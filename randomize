@@ -1,0 +1,10 @@
+import java.util.Random;
+
+public class RandomNumbers {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int randomNumber = random.nextInt(100000); // Generates a random number between 0 and 99999
+        String formattedNumber = String.format("%05d", randomNumber); // Ensures 5 digits with leading zeros
+        System.out.println("5-digit string with leading zeros: " + formattedNumber);
+    }
+}
